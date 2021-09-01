@@ -1,0 +1,10 @@
+kubectl run app1 --image=dockerforrahul/playwithdocker:2.0 --port=8080
+kubectl get pods
+kubectl get pods -o wide
+kubectl describe pod app1
+---------------------------------
+Taint 
+-----------
+kuectl get nodes
+kubectl taint nodes  <node name> node-role.kubernetes.io/master-
+[Above issue was for FailedScheduling]
